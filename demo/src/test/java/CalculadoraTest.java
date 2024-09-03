@@ -29,7 +29,7 @@ public class CalculadoraTest {
     @Test
     public void testedivisao() {
         Calculadora calc = new Calculadora();
-        Integer result = calc.divisao(9, 3);
+        float result = calc.divisao(9, 3);
         assertEquals(3, result);
     }
 }
