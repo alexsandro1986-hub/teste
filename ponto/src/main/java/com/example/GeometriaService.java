@@ -10,14 +10,31 @@ public class GeometriaService {
         return lado * lado;
     }
 
+    
+    public double CalcularAreaRetangulo(double base, double altura){
+        
+        
+        return base *altura;
+    }
+    public double CalcularAreaCirculo(double raio){
+        return 0;
+    }
+    
     public double CalcularVolumeEsfera(double raio) {
         double resultado = (4 * Math.PI * Math.pow(raio, 3)) / 3;
         return resultado;
     }
 
-    public double CalcularAreaRetangulo(double base, double altura){
-            
-        
-        return base *altura;
+    public double CalcularVolumeCubo(double aresta) {
+        double resultado =  Math.pow(aresta, 3);
+        return resultado;
     }
+
+    public double CalcularVolumeCilindro(double raio, double altura) {
+        double resultado =  Math.PI * Math.pow(raio, 2) * 3;
+        return resultado;
+    }
+
+
+    
 }
