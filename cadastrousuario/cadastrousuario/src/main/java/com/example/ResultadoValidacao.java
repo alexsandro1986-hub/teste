@@ -7,7 +7,7 @@ public class ResultadoValidacao {
     // Construtor para sucesso
     public ResultadoValidacao(boolean sucesso) {
         this.sucesso = sucesso;
-        this.mensagemErro = null;
+        
     }
 
     // Construtor para erro
