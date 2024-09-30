@@ -1,4 +1,4 @@
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
@@ -39,16 +39,18 @@ public class GeometriaServiceTest {
     }
 
     @Test
-    public void DeveAreadoCirculo(){
+    public void DeveCalcularAreaCirculo() {
         GeometriaService geometriaService = new GeometriaService();
-        double resultado = geometriaService.CalcularAreaCirculo(2);
-        assertEquals(6, resultado);
+        int resultado = geometriaService.CalcularAreaCirculo(2);
+        int areaEsperada = (int) (Math.PI * Math.pow(2, 2));
+        
+        assertEquals(areaEsperada, resultado);
     }
  @Test
     public void DeveVolumeEsfera(){
         GeometriaService geometriaService = new GeometriaService();
         double resultado = geometriaService.CalcularAreaCirculo(2);
-        assertEquals(6, resultado);
+        assertEquals(12, resultado);
     }
 
 

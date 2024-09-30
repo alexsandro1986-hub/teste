@@ -16,8 +16,9 @@ public class GeometriaService {
         
         return base *altura;
     }
-    public double CalcularAreaCirculo(double raio){
-        return 0;
+    
+    public int CalcularAreaCirculo(double raio) {
+        return (int) (Math.PI * Math.pow(raio, 2));
     }
     
     public double CalcularVolumeEsfera(double raio) {
