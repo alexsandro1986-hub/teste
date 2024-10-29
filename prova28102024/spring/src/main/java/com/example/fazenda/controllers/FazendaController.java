@@ -36,6 +36,7 @@ public class FazendaController {
         return ResponseEntity.ok(usuarioAtualizada);
     }
 
+    @SuppressWarnings("rawtypes")
     @DeleteMapping("/{id}")
     public ResponseEntity delete(@PathVariable Long id){
         service.delete(id);
